@@ -31,16 +31,16 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                R.id.nav_camera -> {
+                R.id.nav_technolgy -> {
                     supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.fragmentContainerView, CameraFragment())
+                        replace(R.id.fragmentContainerView, TechnologyFragment())
                         commit()
                     }
                 }
 
-                R.id.nav_gallery -> {
+                R.id.nav_supermercado -> {
                     supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.fragmentContainerView, GalleryFragment())
+                        replace(R.id.fragmentContainerView, SupermercadoFragment())
                         commit()
                     }
                 }
