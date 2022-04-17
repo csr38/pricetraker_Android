@@ -25,31 +25,31 @@ class MainActivity : AppCompatActivity() {
         nav_view.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.nav_home -> {
-                    supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.fragmentContainerView, HomeFragment())
-                        commit()
-                    }
+                    val frag = supportFragmentManager.beginTransaction()
+                    frag.replace(R.id.fragmentContainerView, HomeFragment())
+                    frag.commit()
+
                 }
 
                 R.id.nav_technolgy -> {
-                    supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.fragmentContainerView, TechnologyFragment())
-                        commit()
-                    }
+                    val frag = supportFragmentManager.beginTransaction()
+                    frag.replace(R.id.fragmentContainerView, TechnologyFragment())
+                    frag.commit()
+
                 }
 
                 R.id.nav_supermercado -> {
-                    supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.fragmentContainerView, SupermercadoFragment())
-                        commit()
-                    }
+                    val frag = supportFragmentManager.beginTransaction()
+                    frag.replace(R.id.fragmentContainerView, SupermercadoFragment())
+                    frag.commit()
+
                 }
 
                 R.id.nav_messages -> {
-                    supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.fragmentContainerView, MessagesFragment())
-                        commit()
-                    }
+                    val frag = supportFragmentManager.beginTransaction()
+                    frag.replace(R.id.fragmentContainerView, MessagesFragment())
+                    frag.commit()
+
                 }
 
             }
