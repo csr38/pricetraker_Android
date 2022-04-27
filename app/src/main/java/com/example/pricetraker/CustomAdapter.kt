@@ -5,9 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter: RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class CustomAdapter(private  val onDestacadoClickListener: OnDestacadoClickListener): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     val titles = arrayOf("Codelia",
         "Suscribete",
@@ -49,6 +50,17 @@ class CustomAdapter: RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
             itemImage = itemView.findViewById(R.id.item_image)
             itemTitle = itemView.findViewById(R.id.item_title)
             itemDetail = itemView.findViewById(R.id.item_detal)
+
+            itemView.setOnClickListener{
+
+                val position: Int = adapterPosition
+                onDestacadoClickListener.onDestacadoItemClicked(position, titles)
+
+                //val position: Int = adapterPosition
+
+                //Toast.makeText(itemView.context, "you clicked on ${titles[position]}", Toast.LENGTH_LONG).show()
+            }
+
         }
     }
 }

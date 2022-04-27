@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_main.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_destacado_detail.xml" value="0.1" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/card_layout.xml" value="0.17" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/card_layout_images.xml" value="0.10778985507246377" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_camera.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_gallery.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_home.xml" value="0.1" />
