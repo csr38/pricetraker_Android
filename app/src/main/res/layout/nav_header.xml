@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="160dp"
+    android:layout_height="80dp"
     android:padding="8dp"
     android:background="@color/material_dynamic_secondary80">
 
@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Nombre de Usuario"
+        android:text="Menú"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -25,7 +26,7 @@
         android:id="@+id/textView_userEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="correo_usuario@email.com"
+        android:text="otro"
         android:textColor="@android:color/black"
         android:textSize="14sp"
         android:textStyle="italic"

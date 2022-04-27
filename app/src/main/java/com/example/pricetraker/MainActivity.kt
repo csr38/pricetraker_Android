@@ -5,6 +5,10 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import com.example.pricetraker.fragment.HomeFragment
+import com.example.pricetraker.fragment.MessagesFragment
+import com.example.pricetraker.fragment.SupermercadoFragment
+import com.example.pricetraker.fragment.TechnologyFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

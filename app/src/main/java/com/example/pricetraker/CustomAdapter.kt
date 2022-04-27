@@ -10,17 +10,24 @@ import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter(private  val onDestacadoClickListener: OnDestacadoClickListener): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
-    val titles = arrayOf("Codelia",
-        "Suscribete",
-        "Video",
-        "YouTube")
+    val titles = arrayOf("Notebook",
+        "Licores",
+        "Smartphone",
+        "Otros",
+        "Otros",
+        "Otros")
 
-    val details = arrayOf("Muchos videos Nuevos",
-        "kotlin",
-        "Más videos",
-        "Grans Cantidad de videos")
+    val details = arrayOf("Tecnologia",
+        "Supermercado",
+        "Tecnologia",
+        "otro",
+        "otro",
+        "otro")
 
-    val images = intArrayOf(R.drawable.ic_launcher_background,
+    val images = intArrayOf(
+        R.drawable._50_1000,
+        R.drawable.licores,
+        R.drawable.smartphone,
         R.drawable.ic_launcher_background,
         R.drawable.ic_launcher_background,
         R.drawable.ic_launcher_background
