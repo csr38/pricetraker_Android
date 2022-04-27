@@ -15,6 +15,28 @@ import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
 class HomeFragment : Fragment(R.layout.fragment_home), OnDestacadoClickListener {
+    val titles = arrayOf("Notebook",
+        "Licores",
+        "Smartphone",
+        "Otros",
+        "Otros",
+        "Otros")
+
+    val details = arrayOf("Tecnologia",
+        "Supermercado",
+        "Tecnologia",
+        "otro",
+        "otro",
+        "otro")
+
+    val images = intArrayOf(
+        R.drawable._50_1000,
+        R.drawable.licores,
+        R.drawable.smartphone,
+        R.drawable.ic_launcher_background,
+        R.drawable.ic_launcher_background,
+        R.drawable.ic_launcher_background
+    )
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,7 +45,7 @@ class HomeFragment : Fragment(R.layout.fragment_home), OnDestacadoClickListener 
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         view.recyclerView.layoutManager = LinearLayoutManager(activity)
-        view.recyclerView.adapter = CustomAdapter(this)
+        view.recyclerView.adapter = CustomAdapter(this, titles, details, images)
 
 
         return view

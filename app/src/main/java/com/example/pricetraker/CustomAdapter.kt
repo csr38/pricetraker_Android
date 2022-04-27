@@ -1,5 +1,6 @@
 package com.example.pricetraker
 
+import android.telecom.Call
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,31 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter(private  val onDestacadoClickListener: OnDestacadoClickListener): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
-
-    val titles = arrayOf("Notebook",
-        "Licores",
-        "Smartphone",
-        "Otros",
-        "Otros",
-        "Otros")
-
-    val details = arrayOf("Tecnologia",
-        "Supermercado",
-        "Tecnologia",
-        "otro",
-        "otro",
-        "otro")
-
-    val images = intArrayOf(
-        R.drawable._50_1000,
-        R.drawable.licores,
-        R.drawable.smartphone,
-        R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_background
-    )
-
+class CustomAdapter(private  val onDestacadoClickListener: OnDestacadoClickListener, private val titles: Array<String>, private val details: Array<String>, private val images : IntArray): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
     override  fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder{
         val v = LayoutInflater.from(viewGroup.context).inflate(R.layout.card_layout, viewGroup, false)
         return ViewHolder(v)
