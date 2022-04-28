@@ -10,6 +10,6 @@ class DestacadoDetail : AppCompatActivity() {
         setContentView(R.layout.activity_destacado_detail)
 
         val name = intent.getStringExtra("name")
-        tv_name.text = name
+        destacado_title.text = name
     }
 }

@@ -37,14 +37,21 @@ class TechnologyFragment : Fragment(R.layout.fragment_technology), OnDestacadoCl
         R.drawable.ic_launcher_background
     )
 
+
+
+    val image_url = arrayOf("https://devexperto.com/wp-content/uploads/2022/03/image-52.png"
+    )
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
+
         val view = inflater.inflate(R.layout.fragment_technology, container, false)
 
         view.recyclerView.layoutManager = LinearLayoutManager(activity)
-        view.recyclerView.adapter = CustomAdapter(this, titles, details, images)
+        view.recyclerView.adapter = CustomAdapter(this, titles, details, image_url)
 
 
         return view

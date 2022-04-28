@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class HomeFragment : Fragment(R.layout.fragment_home), OnDestacadoClickListener {
     val titles = arrayOf("Notebook",
-        "Licores",
+        "Lacteos",
         "Smartphone",
         "Otros",
         "Otros",
@@ -29,6 +29,7 @@ class HomeFragment : Fragment(R.layout.fragment_home), OnDestacadoClickListener 
         "otro",
         "otro")
 
+/*
     val images = intArrayOf(
         R.drawable._50_1000,
         R.drawable.licores,
@@ -36,6 +37,12 @@ class HomeFragment : Fragment(R.layout.fragment_home), OnDestacadoClickListener 
         R.drawable.ic_launcher_background,
         R.drawable.ic_launcher_background,
         R.drawable.ic_launcher_background
+    )
+*/
+
+    val image_url = arrayOf("https://i.blogs.es/f32047/xiaomi-mi-notebook/450_1000.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwW3EF3Q7Uds33gKH9MIcJ1EYVFI9lQIfQAQ&usqp=CAU",
+        "https://media.wired.com/photos/621980b1aaf30ea1c35e400a/191:100/w_2580,c_limit/Gear-Samsung-S22-Series.jpg","g","g","g"
     )
 
     override fun onCreateView(
@@ -45,7 +52,7 @@ class HomeFragment : Fragment(R.layout.fragment_home), OnDestacadoClickListener 
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         view.recyclerView.layoutManager = LinearLayoutManager(activity)
-        view.recyclerView.adapter = CustomAdapter(this, titles, details, images)
+        view.recyclerView.adapter = CustomAdapter(this, titles, details, image_url)
 
 
         return view
