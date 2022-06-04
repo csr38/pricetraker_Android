@@ -15,11 +15,14 @@ import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
 class TechnologyFragment : Fragment(R.layout.fragment_technology), OnDestacadoClickListener {
+
+    val producto = arrayOf(arrayOf("uno"),arrayOf("dos"), arrayOf("https://i.blogs.es/f32047/xiaomi-mi-notebook/450_1000.jpg"))
+
     val titles = arrayOf("Notebook",
-        "Licores",
+        "Consolas",
         "Smartphone",
-        "Otros",
-        "Otros",
+        "Tablets",
+        "Accesorios",
         "Otros")
     val details = arrayOf("Tecnologia",
         "Supermercado",
@@ -28,14 +31,7 @@ class TechnologyFragment : Fragment(R.layout.fragment_technology), OnDestacadoCl
         "otro",
         "otro")
 
-    val images = intArrayOf(
-        R.drawable._50_1000,
-        R.drawable.licores,
-        R.drawable.smartphone,
-        R.drawable.licores,
-        R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_background
-    )
+
 
 
 
@@ -51,7 +47,7 @@ class TechnologyFragment : Fragment(R.layout.fragment_technology), OnDestacadoCl
         val view = inflater.inflate(R.layout.fragment_technology, container, false)
 
         view.recyclerView.layoutManager = LinearLayoutManager(activity)
-        view.recyclerView.adapter = CustomAdapter(this, titles, details, image_url)
+        view.recyclerView.adapter = CustomAdapter(this, titles, details, image_url, producto)
 
 
         return view

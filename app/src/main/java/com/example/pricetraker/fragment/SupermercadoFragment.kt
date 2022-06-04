@@ -15,6 +15,9 @@ import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
 class SupermercadoFragment : Fragment(R.layout.fragment_supermercado), OnDestacadoClickListener {
+
+    val producto = arrayOf(arrayOf("uno"),arrayOf("dos"), arrayOf("https://i.blogs.es/f32047/xiaomi-mi-notebook/450_1000.jpg"))
+
     val titles = arrayOf(
         "Notebook",
         "Licores",
@@ -54,15 +57,15 @@ class SupermercadoFragment : Fragment(R.layout.fragment_supermercado), OnDestaca
         val view = inflater.inflate(R.layout.fragment_supermercado, container, false)
 
         view.recyclerView.layoutManager = LinearLayoutManager(activity)
-        view.recyclerView.adapter = CustomAdapter(this, titles, details, image_url)
+        view.recyclerView.adapter = CustomAdapter(this, titles, details, image_url, producto)
 
 
         return view
     }
 
     override fun onDestacadoItemClicked(position: Int, titles: Array<String>) {
-        val lanzar = Intent(this@SupermercadoFragment.context, DestacadoDetail::class.java)
-        lanzar.putExtra("name", titles[position])
+        val lanzar = Intent(this@SupermercadoFragment.context, TechnologyFragment::class.java)
+
         startActivity(lanzar)
     }
 

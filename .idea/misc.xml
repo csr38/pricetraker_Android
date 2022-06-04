@@ -3,16 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_destacado_detail.xml" value="0.1" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1505" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_destacado_detail.xml" value="0.25" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/card_layout.xml" value="0.17" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_maps.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_view_producto.xml" value="0.1" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/card_layout.xml" value="0.1" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/card_layout_destacado_detail.xml" value="0.25" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/card_layout_images.xml" value="0.10778985507246377" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_camera.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_gallery.xml" value="0.18229166666666666" />
-        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_home.xml" value="0.15" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_message.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_product.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_supermercado.xml" value="0.18229166666666666" />
-        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/nav_header.xml" value="0.10774410774410774" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/nav_header.xml" value="0.21" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/menu/menu_adapter.xml" value="0.22" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/menu/nav_menu.xml" value="0.18" />
       </map>
     </option>
