@@ -1,14 +1,14 @@
-package com.example.pricetraker
+package com.example.pricetraker.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.PrecomputedText
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import com.example.pricetraker.R
+import com.example.pricetraker.databinding.ActivityMainBinding
 import com.example.pricetraker.fragment.HomeFragment
-import com.example.pricetraker.fragment.MessagesFragment
 import com.example.pricetraker.fragment.SupermercadoFragment
 import com.example.pricetraker.fragment.TechnologyFragment
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,19 +16,23 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity(){
 
     private lateinit var toogle: ActionBarDrawerToggle
-
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+
+        setContentView(binding.root)
 
         //window.setFlags(PrecomputedText.Params)
 
         //Solucionar error de drawerLayout(id de activity_main) con "id 'kotlin-android-extensions'" en plugins de build.gradle
-        toogle = ActionBarDrawerToggle(this, drawerLayout, R.string.open_drawer, R.string.close_drawer)
+        toogle = ActionBarDrawerToggle(this, drawerLayout,
+            R.string.open_drawer,
+            R.string.close_drawer
+        )
         drawerLayout.addDrawerListener(toogle)
         toogle.syncState()
-
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
@@ -36,11 +40,8 @@ class MainActivity : AppCompatActivity(){
         nav_view.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.nav_home -> {
-
                     val frag = supportFragmentManager.beginTransaction()
-
                     frag.replace(R.id.fragmentContainerView, HomeFragment())
-
                     frag.commit()
 
                 }

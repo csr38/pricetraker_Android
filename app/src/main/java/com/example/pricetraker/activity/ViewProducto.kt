@@ -1,12 +1,9 @@
-package com.example.pricetraker
+package com.example.pricetraker.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.pricetraker.R
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_destacado_detail.*
 import kotlinx.android.synthetic.main.activity_view_producto.*
 
 class ViewProducto : AppCompatActivity() {
@@ -26,7 +23,6 @@ class ViewProducto : AppCompatActivity() {
         textView3.text = details
         textView4.text = precio
     }
-
 
 
 

@@ -7,55 +7,49 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.pricetraker.CustomAdapter
-import com.example.pricetraker.DestacadoDetail
-import com.example.pricetraker.OnDestacadoClickListener
-import com.example.pricetraker.R
+import com.example.pricetraker.*
+import com.example.pricetraker.activity.DestacadoDetail
+import com.example.pricetraker.adapter.CategoriasAdapter
+import com.example.pricetraker.data.DataCategorias
+import com.example.pricetraker.provider.categorias.CategoriasTecnologiaProvider
+import com.example.pricetraker.databinding.FragmentTechnologyBinding
+
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
-class TechnologyFragment : Fragment(R.layout.fragment_technology), OnDestacadoClickListener {
+class TechnologyFragment : Fragment(R.layout.fragment_technology){
 
-    val producto = arrayOf(arrayOf("uno"),arrayOf("dos"), arrayOf("https://i.blogs.es/f32047/xiaomi-mi-notebook/450_1000.jpg"))
-
-    val titles = arrayOf("Notebook",
-        "Consolas",
-        "Smartphone",
-        "Tablets",
-        "Accesorios",
-        "Otros")
-    val details = arrayOf("Tecnologia",
-        "Supermercado",
-        "Tecnologia",
-        "otro",
-        "otro",
-        "otro")
+    private var _binding: FragmentTechnologyBinding? = null
+    private val binding get() = _binding!!
 
 
-
-
-
-    val image_url = arrayOf("https://devexperto.com/wp-content/uploads/2022/03/image-52.png"
-    )
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
 
     ): View? {
 
-        val view = inflater.inflate(R.layout.fragment_technology, container, false)
+        _binding = FragmentTechnologyBinding.inflate(inflater, container, false)
+
+
+        val view = binding.root
 
         view.recyclerView.layoutManager = LinearLayoutManager(activity)
-        view.recyclerView.adapter = CustomAdapter(this, titles, details, image_url, producto)
+        view.recyclerView.adapter = CategoriasAdapter(CategoriasTecnologiaProvider.listaDataCategoriasDestacadas) { categoriastecnologia ->
+            onItemSelected(
+                categoriastecnologia
+            )
+        }
 
 
         return view
     }
 
-    override fun onDestacadoItemClicked(position: Int, titles: Array<String>) {
+    fun onItemSelected(dataCategorias: DataCategorias){
+        //Toast.makeText(this.context, categoriasDestacadas.titles, Toast.LENGTH_SHORT).show()
         val lanzar = Intent(this@TechnologyFragment.context, DestacadoDetail::class.java)
-        lanzar.putExtra("name", titles[position])
         startActivity(lanzar)
     }
 

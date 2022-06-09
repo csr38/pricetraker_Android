@@ -6,62 +6,47 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.example.pricetraker.*
+import com.example.pricetraker.activity.DestacadoDetail
+import com.example.pricetraker.adapter.CategoriasAdapter
+import com.example.pricetraker.data.DataCategorias
+import com.example.pricetraker.provider.categorias.CategoriasDestacadasProvider
+import com.example.pricetraker.databinding.FragmentHomeBinding
+import com.example.pricetraker.provider.productos.BebidasProvider
 import kotlinx.android.synthetic.main.fragment_home.view.*
-import kotlinx.coroutines.launch
 
-class HomeFragment: Fragment(R.layout.fragment_home), OnDestacadoClickListener {
+class HomeFragment(): Fragment(R.layout.fragment_home){
 
-
-
-    val titles = arrayOf("Notebook",
-        "Lacteos",
-        "Smartphone",
-        "Otros",
-        "Otros",
-        "Otros")
-
-    val details = arrayOf("Tecnologia",
-        "Supermercado",
-        "Tecnologia",
-        "otro",
-        "otro",
-        "otro")
-
-
-    val image_url = arrayOf("https://i.blogs.es/f32047/xiaomi-mi-notebook/450_1000.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwW3EF3Q7Uds33gKH9MIcJ1EYVFI9lQIfQAQ&usqp=CAU",
-        "https://media.wired.com/photos/621980b1aaf30ea1c35e400a/191:100/w_2580,c_limit/Gear-Samsung-S22-Series.jpg","g","g","g"
-    )
-
-    val producto = arrayOf(titles,details, image_url)
+    private var _binding:FragmentHomeBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
 
-
     ): View? {
-
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val view = binding.root
 
 
         view.recyclerView.layoutManager = LinearLayoutManager(activity)
 
-        view.recyclerView.adapter = CustomAdapter(this, titles, details, image_url,producto)
-
+        view.recyclerView.adapter = CategoriasAdapter(CategoriasDestacadasProvider.listaDataCategoriasDestacadas) { categoriasdestacadas ->
+            onItemSelected(
+                categoriasdestacadas
+            )
+        }
 
         return view
     }
 
-    override fun onDestacadoItemClicked(position: Int, titles: Array<String>) {
+    fun onItemSelected(dataCategorias: DataCategorias){
+        //Toast.makeText(this.context, categoriasDestacadas.titles, Toast.LENGTH_SHORT).show()
 
         val lanzar = Intent(this@HomeFragment.context, DestacadoDetail::class.java)
-
-        lanzar.putExtra("name", titles[position])
+        lanzar.putExtra("opcion", dataCategorias.id)
         startActivity(lanzar)
     }
 
