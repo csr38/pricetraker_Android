@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity(){
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         this.setTitle("Home")
-        this.getColor(R.color.black)
 
 
 
@@ -91,8 +90,11 @@ class MainActivity : AppCompatActivity(){
         if(toogle.onOptionsItemSelected(item)){
             return true
         }
-
         return super.onOptionsItemSelected(item)
+    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_right, menu)
+        return true
     }
 
 

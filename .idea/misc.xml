@@ -7,7 +7,7 @@
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/drawable/ic_baseline_sort_24.xml" value="0.175" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_bubble_sort.xml" value="0.2" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_destacado_detail.xml" value="0.25" />
-        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_main.xml" value="0.146875" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_maps.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/activity_view_producto.xml" value="0.1" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/card_layout.xml" value="0.1" />
@@ -23,6 +23,7 @@
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/fragment_technology.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/layout/nav_header.xml" value="0.21" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/menu/menu_adapter.xml" value="0.22" />
+        <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/menu/menu_right.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/menu/nav_menu.xml" value="0.18" />
         <entry key="..\:/Users/cesar/AndroidStudioProjects/PriceTraker/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
