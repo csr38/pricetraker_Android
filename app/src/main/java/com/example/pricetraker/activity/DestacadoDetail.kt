@@ -28,6 +28,11 @@ class DestacadoDetail : AppCompatActivity() {
     private fun initRecyclerView(){
 
         binding.recyclerView.layoutManager = GridLayoutManager(this, 2)
+        NotebookProvider.listaDataProducto.add(
+            DataProducto("HP",
+                "Invento",
+                "l",
+                120))
 
         val opcion = intent.getIntExtra("opcion", 1)
         if(opcion == 1){

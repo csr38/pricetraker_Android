@@ -1,10 +1,12 @@
 package com.example.pricetraker.fragment
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.graphics.toColor
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 
@@ -27,6 +29,8 @@ class HomeFragment(): Fragment(R.layout.fragment_home){
         savedInstanceState: Bundle?
 
     ): View? {
+        activity?.setTitle("Home")
+
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding.root
 
@@ -38,6 +42,7 @@ class HomeFragment(): Fragment(R.layout.fragment_home){
                 categoriasdestacadas
             )
         }
+
 
         return view
     }

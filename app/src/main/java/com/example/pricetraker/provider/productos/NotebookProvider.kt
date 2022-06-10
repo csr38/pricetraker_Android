@@ -3,7 +3,7 @@ package com.example.pricetraker.provider.productos
 import com.example.pricetraker.data.DataProducto
 class NotebookProvider {
     companion object {
-        val listaDataProducto = listOf<DataProducto>(
+        val listaDataProducto = mutableListOf<DataProducto>(
             DataProducto(
                 "HP",
                 "Pavilion Aero Aero 13-BE0502LA",

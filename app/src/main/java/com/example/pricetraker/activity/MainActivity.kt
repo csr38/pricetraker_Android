@@ -1,10 +1,11 @@
 package com.example.pricetraker.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.example.pricetraker.R
 import com.example.pricetraker.databinding.ActivityMainBinding
@@ -13,10 +14,13 @@ import com.example.pricetraker.fragment.SupermercadoFragment
 import com.example.pricetraker.fragment.TechnologyFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 class MainActivity : AppCompatActivity(){
 
     private lateinit var toogle: ActionBarDrawerToggle
     private lateinit var binding: ActivityMainBinding
+
+    var titulo = "mi_actividad"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +39,10 @@ class MainActivity : AppCompatActivity(){
         toogle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        this.setTitle("Home")
+        this.getColor(R.color.black)
+
 
 
         nav_view.setNavigationItemSelectedListener {
