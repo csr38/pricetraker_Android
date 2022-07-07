@@ -35,7 +35,8 @@ class CategoriasDestacadasProvider {
                 "Licores",
                 "Supermercado",
                 "https://saboryestilo.com.mx/wp-content/uploads/elementor/thumbs/Vino-Licor-Diferencias-oujfq7sf2joeoippsdsqfykh5172tk8jgjagwd3i2o.jpg",
-            6)
+            6),
+
         )
     }
 }

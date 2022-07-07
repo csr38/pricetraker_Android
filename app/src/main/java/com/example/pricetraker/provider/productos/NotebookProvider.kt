@@ -2,6 +2,7 @@ package com.example.pricetraker.provider.productos
 
 import com.example.pricetraker.data.DataProducto
 class NotebookProvider {
+
     companion object {
         val listaDataProducto = mutableListOf<DataProducto>(
             DataProducto(

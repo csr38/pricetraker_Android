@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pricetraker.*
 import com.example.pricetraker.activity.DestacadoDetail
-import com.example.pricetraker.adapter.CategoriasAdapter
+import com.example.pricetraker.recyclerview.adapter.CategoriasAdapter
 import com.example.pricetraker.data.DataCategorias
 import com.example.pricetraker.provider.categorias.CategoriasTecnologiaProvider
 import com.example.pricetraker.databinding.FragmentTechnologyBinding

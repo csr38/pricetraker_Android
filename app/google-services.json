@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "613627744737",
+    "firebase_url": "https://apptraker-8c803-default-rtdb.firebaseio.com",
+    "project_id": "apptraker-8c803",
+    "storage_bucket": "apptraker-8c803.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613627744737:android:bc914f18d989d50ea1c2a0",
+        "android_client_info": {
+          "package_name": "com.example.pricetraker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613627744737-2u7p6sif6os0t2mhljgtpdiocmvmb4kk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtbatcucR3hPB6PNUkTzT_Bfkyd-Kq-CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613627744737-2u7p6sif6os0t2mhljgtpdiocmvmb4kk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,14 +12,14 @@ import androidx.viewpager.widget.ViewPager
 
 import com.example.pricetraker.*
 import com.example.pricetraker.activity.DestacadoDetail
-import com.example.pricetraker.adapter.CategoriasAdapter
-import com.example.pricetraker.adapter.ProductoAdapterHorizontal
-import com.example.pricetraker.adapter.SliderAdapter
+import com.example.pricetraker.recyclerview.adapter.CategoriasAdapter
+import com.example.pricetraker.recyclerview.adapter.ProductoAdapterHorizontal
+import com.example.pricetraker.recyclerview.adapter.SliderAdapter
 import com.example.pricetraker.data.DataCategorias
 import com.example.pricetraker.data.DataProductoHorizontal
 import com.example.pricetraker.provider.categorias.CategoriasDestacadasProvider
 import com.example.pricetraker.databinding.FragmentHomeBinding
-import com.example.pricetraker.provider.ProductoHorizontalProvider
+import com.example.pricetraker.provider.productos.ProductoHorizontalProvider
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class HomeFragment(): Fragment(R.layout.fragment_home){
@@ -65,7 +65,7 @@ class HomeFragment(): Fragment(R.layout.fragment_home){
         lm.orientation = LinearLayoutManager.HORIZONTAL
         rvBaju = view.findViewById(R.id.rv_baju)
 
-        val adapterBaju = ProductoAdapterHorizontal(ProductoHorizontalProvider.listaDataProductoHorizontal){productoshorizontaldestacados->
+        val adapterBaju = ProductoAdapterHorizontal(ProductoHorizontalProvider.listaDataProductoHorizontal){ productoshorizontaldestacados->
             onItemSelectedDos(
                 productoshorizontaldestacados
             )
