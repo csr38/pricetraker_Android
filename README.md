@@ -25,7 +25,7 @@ La aplicación móvil está desarrollada en Kotlin y se conecta a Firebase para 
 1. Clona este repositorio:
 
     ```bash
-    git clone https://github.com/csr38/priceTrakerScraping.git
+    git clone https://github.com/csr38/pricetraker_Android.git
     cd priceTrakerScraping
     ```
 
