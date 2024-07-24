@@ -15,10 +15,10 @@ La aplicación móvil está desarrollada en Kotlin y se conecta a Firebase para 
 ### Capturas de Pantalla
 
 #### Home
-![Home](images/home.jpg)
+![Home](imagenes/home.jpg)
 
 #### Home con Productos
-![Home con Productos](images/home2.jpg)
+![Home con Productos](imagenes/home2.jpg)
 
 ### Instalación
 
